@@ -17,7 +17,7 @@ import java.util.Map;
  * Created by dingjiang on 2/2/16.
  */
 @Controller
-@RequestMapping("/list")
+@RequestMapping("/")
 public class ListController {
 
     //@Resource
@@ -30,6 +30,15 @@ public class ListController {
         System.out.println("----------------------------");
         //model.addAttribute("list", picList);
         return "list";
+    }
+
+    @RequestMapping("chart")
+    public String toChartIndex(HttpServletRequest request, Model model){
+        Map<String, Object> map = new HashMap<String, Object>();
+        //List<Pic> picList = listService.getListByMap(map);
+        System.out.println("----------------------------");
+        //model.addAttribute("list", picList);
+        return "chart/index";
     }
 
 
