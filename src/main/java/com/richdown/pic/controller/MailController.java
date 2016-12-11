@@ -21,11 +21,7 @@ public class MailController {
         mailInfo.setMailServerHost("smtp.163.com");
         mailInfo.setMailServerPort("25");
         mailInfo.setValidate(true);
-        mailInfo.setUserName("thinsme@163.com");
-        mailInfo.setPassword("jiangwenqian123");//您的邮箱密码
-        mailInfo.setFromAddress("thinsme@163.com");
-        mailInfo.setToAddress("dinglinan123@gmail.com");
-        mailInfo.setSubject("ThinsPriceCachedEmailNotify");
+
         mailInfo.setContent("设置邮箱内容");
         //这个类主要来发送邮件
         SimpleMailSender sms = new SimpleMailSender();
